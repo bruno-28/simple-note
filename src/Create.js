@@ -4,15 +4,29 @@ const Create = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("");
+  const [isPending, setIsPending] = useState(false);
 
-  const handleClick = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+
+    setIsPending(true);
+
+    const note = { title, body, author };
+
+    fetch("http://localhost:8000/notes", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(note),
+    }).then(() => {
+      console.log("new note added");
+      setIsPending(false);
+    });
   };
 
   return (
     <div className="create">
       <h2>Add a new note</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>Note title:</label>
         <input
           type="text"
@@ -39,7 +53,7 @@ const Create = () => {
             setAuthor(e.target.value);
           }}
         ></input>
-        <button onClick={(e) => handleClick(e)}>Add Note</button>
+        {!isPending ? (<button>Add Note</button>) : (<button disabled>Adding note...</button>)}
       </form>
     </div>
   );
