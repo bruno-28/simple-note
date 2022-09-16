@@ -1,13 +1,12 @@
-const NoteList = ({ notes, title, handleDelete }) => {
+const NoteList = ({ notes, title }) => {
 
   return (
     <div className="note-list">
-      <h2>{title}</h2>
+      <h1>{title}</h1>
       {notes.map((note) => (
         <div className="note-preview" key={note.id}>
           <h2>{note.title}</h2>
           <p>Written by: {note.author}</p>
-          <button onClick={() => handleDelete(note.id)}>Delete Note</button>
         </div>
       ))}
     </div>
