@@ -1,5 +1,4 @@
 const NoteList = ({ notes, title }) => {
-
   return (
     <div className="note-list">
       <h1>{title}</h1>
@@ -11,6 +10,6 @@ const NoteList = ({ notes, title }) => {
       ))}
     </div>
   );
-}
+};
 
 export default NoteList;

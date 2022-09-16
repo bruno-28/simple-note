@@ -1,21 +1,21 @@
 {
   "notes": [
-    { 
-      "title": "Shopping List", 
-      "body": "lorem ipsum...", 
-      "author": "John", 
+    {
+      "title": "Shopping List",
+      "body": "lorem ipsum...",
+      "author": "John",
       "id": 1
     },
-    { 
-      "title": "TODO List", 
-      "body": "lorem ipsum...", 
-      "author": "John", 
+    {
+      "title": "TODO List",
+      "body": "lorem ipsum...",
+      "author": "John",
       "id": 2
     },
-    { 
-      "title": "Movies List", 
-      "body": "lorem ipsum...", 
-      "author": "John", 
+    {
+      "title": "Movies List",
+      "body": "lorem ipsum...",
+      "author": "John",
       "id": 3
     }
   ]
