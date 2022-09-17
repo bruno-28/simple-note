@@ -15,6 +15,7 @@ function App() {
             <Route path="/create" element={<Create />} />
             <Route path="/about" element={<h1>About</h1>} />
             <Route path="/notes/:id" element={<NoteDetails />} />
+            <Route path="*" element={<h1>Page not found</h1>} />
           </Routes>
         </div>
       </div>

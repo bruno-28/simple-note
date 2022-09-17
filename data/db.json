@@ -1,22 +1,10 @@
 {
   "notes": [
     {
-      "title": "Shopping List",
-      "body": "lorem ipsum...",
-      "author": "John",
+      "title": "Movie List",
+      "body": "There will be blood",
+      "author": "Me",
       "id": 1
-    },
-    {
-      "title": "TODO List",
-      "body": "lorem ipsum...",
-      "author": "John",
-      "id": 2
-    },
-    {
-      "title": "Movies List",
-      "body": "lorem ipsum...",
-      "author": "John",
-      "id": 3
     }
   ]
 }
