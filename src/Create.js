@@ -15,7 +15,7 @@ const Create = () => {
 
     const note = { title, body, author };
 
-    fetch("http://localhost:8000/notes", {
+    fetch("http://localhost:4000/api/notes", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(note),
@@ -57,7 +57,11 @@ const Create = () => {
             setAuthor(e.target.value);
           }}
         ></input>
-        {!isPending ? (<button>Add Note</button>) : (<button disabled>Adding note...</button>)}
+        {!isPending ? (
+          <button>Add Note</button>
+        ) : (
+          <button disabled>Adding note...</button>
+        )}
       </form>
     </div>
   );

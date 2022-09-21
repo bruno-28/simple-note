@@ -2,7 +2,8 @@ import NoteList from "./NoteList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-  const url = "http://localhost:8000/notes";
+  //const url = "http://localhost:8000/notes";
+  const url = "http://localhost:4000/api/notes";
 
   const { data: notes, isPending, error } = useFetch(url);
 

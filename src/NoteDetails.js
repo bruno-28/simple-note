@@ -2,16 +2,20 @@ import { useNavigate, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 
 const NoteDetails = () => {
+  //const url = "http://localhost:8000/notes/";
+  const url = "http://localhost:4000/api/notes/";
+  
   const { id } = useParams();
+  console.log(id);
   const {
     data: note,
     isPending,
     error,
-  } = useFetch("http://localhost:8000/notes/" + id);
+  } = useFetch(url + id);
   const navigate = useNavigate();
 
   const handleClick = () => {
-    fetch("http://localhost:8000/notes/" + id, {
+    fetch(url + id, {
       method: "DELETE"
     }).then(() => {
       navigate("/");
