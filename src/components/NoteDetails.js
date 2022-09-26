@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import useFetch from "./useFetch";
+import useFetch from "./hooks/useFetch";
 
 const NoteDetails = () => {
   //const url = "http://localhost:8000/notes/";
