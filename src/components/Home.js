@@ -1,5 +1,5 @@
 import NoteList from "./NoteList";
-import useFetch from "./hooks/useFetch";
+import useFetch from "../hooks/useFetch";
 
 const Home = () => {
   //const url = "http://localhost:8000/notes";
