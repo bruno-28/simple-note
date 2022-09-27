@@ -34,6 +34,7 @@ const Create = () => {
         <label>Note title:</label>
         <input
           type="text"
+          placeholder="Add title..."
           required
           value={title}
           onChange={(e) => {
@@ -42,6 +43,7 @@ const Create = () => {
         ></input>
         <label>Note body:</label>
         <textarea
+          placeholder="Add body..."
           required
           value={body}
           onChange={(e) => {
@@ -51,6 +53,7 @@ const Create = () => {
         <label>Note author:</label>
         <input
           type="text"
+          placeholder="Add author..."
           required
           value={author}
           onChange={(e) => {
